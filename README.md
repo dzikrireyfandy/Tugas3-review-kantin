@@ -1,6 +1,6 @@
 # Tugas 3 Authentication, Authorization, & Data Validation: Review Kantin
 
-Project backend API menggunakan Node.js, TypeScript, dan Drizzle ORM yang dilengkapi dengan sistem autentikasi JWT, validasi input menggunakan Zod, pembatasan hak akses (*Role-Based Access Control* & *Object-Level Ownership*), serta pengamanan password menggunakan *Bcrypt*.
+Tugas backend API menggunakan Node.js, TypeScript, dan Drizzle ORM yang dilengkapi dengan sistem autentikasi JWT, validasi input menggunakan Zod, pembatasan hak akses (*Role-Based Access Control* & *Object-Level Ownership*), serta pengamanan password menggunakan *Bcrypt*.
 
 
 ---
