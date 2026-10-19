@@ -1,34 +1,31 @@
-# Tugas 2 — REST API: CRUD & Database Integration
-- **Runtime & Language:** Node.js, TypeScript
-- **Framework:** Express.js
-- **Database & ORM:** SQL Server (SSMS), Drizzle ORM
-- **API Documentation:** Swagger UI (`swagger-autogen`)
-- **Security:** Bcrypt (Password Hashing)
+# Tugas 3 — Authentication, Authorization, & Data Validation: Review Kantin
 
-## 1. Struktur Folder
+Project backend API menggunakan Node.js, TypeScript, dan Drizzle ORM yang dilengkapi dengan sistem autentikasi JWT, validasi input menggunakan Zod, pembatasan hak akses (*Role-Based Access Control* & *Object-Level Ownership*), serta pengamanan password menggunakan *Bcrypt*.
 
-```
-tugas2-drizzle/
+
+---
+
+##  Struktur Folder Project
+
+```text
+tugas3-review-kantin/
 ├─ package.json
 ├─ tsconfig.json
 ├─ drizzle.config.ts
 ├─ .env.example
 ├─ sql/
-│  ├─ 00-setup-mixed-mode.sql       
-│  ├─ 01-create-database-and-user.sql 
-│  ├─ 02-schema.sql                   
-│  └─ 03-seed.sql                     
+│  ├─ 00-setup-mixed-mode.sql        
+│  ├─ 01-create-database-and-user.sql  
+│  ├─ 02-schema.sql                    
+│  └─ 03-seed.sql                    
 └─ src/
-   ├─ index.ts              
+   ├─ index.ts          
    ├─ db/
    │  ├─ schema.ts           
-   │  └─ index.ts            
-   ├─ docs/
-   │  ├─ swagger.ts         
-   │  └─ swagger-output.json 
-   ├─ dtos/                  
-   ├─ repositories/          
-   ├─ services/              
+   │  └─ index.ts           
+   ├─ middlewares/          
+   ├─ dtos/                 
+   ├─ repositories/         
+   ├─ services/             
    ├─ controllers/          
-   └─ routes/                
-```
+   └─ docs/                
